@@ -1,0 +1,80 @@
+﻿  desarrollopa.cpp
+C:\Users\anits\Downloads\PA_repository-main\Prác_2\desarrollopa_triangle_3\desarrollopa\Color.h(11,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "desarrollopa.cpp")
+  
+C:\Users\anits\Downloads\PA_repository-main\Prác_2\desarrollopa_triangle_3\desarrollopa\Color.h(11,27): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "desarrollopa.cpp")
+  
+C:\Users\anits\Downloads\PA_repository-main\Prác_2\desarrollopa_triangle_3\desarrollopa\Color.h(11,38): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "desarrollopa.cpp")
+  
+C:\Users\anits\Downloads\PA_repository-main\Prác_2\desarrollopa_triangle_3\desarrollopa\Cuboid.h(15,28): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "desarrollopa.cpp")
+  
+C:\Users\anits\Downloads\PA_repository-main\Prác_2\desarrollopa_triangle_3\desarrollopa\Cuboid.h(15,41): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "desarrollopa.cpp")
+  
+C:\Users\anits\Downloads\PA_repository-main\Prác_2\desarrollopa_triangle_3\desarrollopa\Teapot.h(12,17): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "desarrollopa.cpp")
+  
+C:\Users\anits\Downloads\PA_repository-main\Prác_2\desarrollopa_triangle_3\desarrollopa\SceneGame.h(22,100): warning C4244: 'argumento': conversión de 'double' a 'float'; posible pérdida de datos
+  (compilando archivo de origen "desarrollopa.cpp")
+  
+C:\Users\anits\Downloads\PA_repository-main\Prác_2\desarrollopa_triangle_3\desarrollopa\SceneMenu.h(23,30): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "desarrollopa.cpp")
+  
+  Game.cpp
+C:\Users\anits\Downloads\PA_repository-main\Prác_2\desarrollopa_triangle_3\desarrollopa\Color.h(11,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "Game.cpp")
+  
+C:\Users\anits\Downloads\PA_repository-main\Prác_2\desarrollopa_triangle_3\desarrollopa\Color.h(11,27): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "Game.cpp")
+  
+C:\Users\anits\Downloads\PA_repository-main\Prác_2\desarrollopa_triangle_3\desarrollopa\Color.h(11,38): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "Game.cpp")
+  
+C:\Users\anits\Downloads\PA_repository-main\Prác_2\desarrollopa_triangle_3\desarrollopa\Cuboid.h(15,28): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "Game.cpp")
+  
+C:\Users\anits\Downloads\PA_repository-main\Prác_2\desarrollopa_triangle_3\desarrollopa\Cuboid.h(15,41): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "Game.cpp")
+  
+C:\Users\anits\Downloads\PA_repository-main\Prác_2\desarrollopa_triangle_3\desarrollopa\Teapot.h(12,17): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "Game.cpp")
+  
+C:\Users\anits\Downloads\PA_repository-main\Prác_2\desarrollopa_triangle_3\desarrollopa\SceneGame.h(22,100): warning C4244: 'argumento': conversión de 'double' a 'float'; posible pérdida de datos
+  (compilando archivo de origen "Game.cpp")
+  
+C:\Users\anits\Downloads\PA_repository-main\Prác_2\desarrollopa_triangle_3\desarrollopa\SceneMenu.h(23,30): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "Game.cpp")
+  
+C:\Users\anits\Downloads\PA_repository-main\Prác_2\desarrollopa_triangle_3\desarrollopa\Game.cpp(42,47): warning C4244: '=': conversión de '_Rep' a 'long'; posible pérdida de datos
+C:\Users\anits\Downloads\PA_repository-main\Prác_2\desarrollopa_triangle_3\desarrollopa\Game.cpp(42,47): warning C4244:         with
+C:\Users\anits\Downloads\PA_repository-main\Prác_2\desarrollopa_triangle_3\desarrollopa\Game.cpp(42,47): warning C4244:         [
+C:\Users\anits\Downloads\PA_repository-main\Prác_2\desarrollopa_triangle_3\desarrollopa\Game.cpp(42,47): warning C4244:             _Rep=__int64
+C:\Users\anits\Downloads\PA_repository-main\Prác_2\desarrollopa_triangle_3\desarrollopa\Game.cpp(42,47): warning C4244:         ]
+  SceneMenu.cpp
+C:\Users\anits\Downloads\PA_repository-main\Prác_2\desarrollopa_triangle_3\desarrollopa\Color.h(11,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "SceneMenu.cpp")
+  
+C:\Users\anits\Downloads\PA_repository-main\Prác_2\desarrollopa_triangle_3\desarrollopa\Color.h(11,27): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "SceneMenu.cpp")
+  
+C:\Users\anits\Downloads\PA_repository-main\Prác_2\desarrollopa_triangle_3\desarrollopa\Color.h(11,38): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "SceneMenu.cpp")
+  
+C:\Users\anits\Downloads\PA_repository-main\Prác_2\desarrollopa_triangle_3\desarrollopa\Cuboid.h(15,28): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "SceneMenu.cpp")
+  
+C:\Users\anits\Downloads\PA_repository-main\Prác_2\desarrollopa_triangle_3\desarrollopa\Cuboid.h(15,41): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "SceneMenu.cpp")
+  
+C:\Users\anits\Downloads\PA_repository-main\Prác_2\desarrollopa_triangle_3\desarrollopa\Teapot.h(12,17): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "SceneMenu.cpp")
+  
+C:\Users\anits\Downloads\PA_repository-main\Prác_2\desarrollopa_triangle_3\desarrollopa\SceneMenu.h(23,30): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "SceneMenu.cpp")
+  
+  Text.cpp
+  Generando código...
+  desarrollopa.vcxproj -> C:\Users\anits\Downloads\PA_repository-main\Prác_2\desarrollopa_triangle_3\x64\Debug\desarrollopa.exe
