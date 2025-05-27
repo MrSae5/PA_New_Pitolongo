@@ -1,4 +1,5 @@
 #include "Vector3D.h"
+#include <iostream>
 
 Vector3D Vector3D::Add(Vector3D other)
 {
@@ -32,4 +33,14 @@ Vector3D Vector3D::operator-(Vector3D other)
 		this->GetX() - other.GetX(),
 		this->GetY() - other.GetY(),
 		this->GetZ() - other.GetZ());
+}
+
+//método de tinka
+void Vector3D::Normalize() {
+	float length = sqrt(x * x + y * y + z * z);  // Calculamos la longitud del vector
+	if (length != 0) {  // Evitamos la división por 0
+		x /= length;
+		y /= length;
+		z /= length;
+	}
 }

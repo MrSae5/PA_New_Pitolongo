@@ -12,7 +12,7 @@ private:
 
 public:
 
-	Cuboid() : Solid(), length(0.2), height(1.4), width(1.0)
+	Cuboid() : Solid(), length(0.2f), height(1.4f), width(1.0f)
 	{}
 
 	inline float GetLength() { return this->length; }

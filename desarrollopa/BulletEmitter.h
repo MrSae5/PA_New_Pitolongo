@@ -8,12 +8,10 @@ public:
 	
 	void Render();
 
-	
-
 	void Update(const float& time);
 	Solid* Clone();
 
-	void ProcessKeyPressed(unsigned char key, int px, int py);
+	void DispararBala();
 
 };
 

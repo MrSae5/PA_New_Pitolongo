@@ -1,4 +1,5 @@
 #include "SceneGame.h"
+#include <iostream>
 
 void SceneGame::Render() {
 	this->GetCamera().Render();
@@ -92,4 +93,43 @@ void SceneGame::renderBoundary()
 	right->SetPosition(Vector3D(this->GetBoundary().GetX(), this->GetBoundary().GetY() / 2, this->GetBoundary().GetZ()));
 	right->SetWired(true);
 	right->Render();
+}
+
+
+//Función que procesa los inputs del teclado. Controla el movimiento  de la cára y el jugador.
+void SceneGame::ProcessKeyPressed(unsigned char key, int px, int py) {
+
+	std::cout << "Tecla pulsada: " << key << std::endl;
+
+	switch (key) {
+
+	case 'D':
+	case 'd':
+		//al pulsar la "D", tanto el personaje como la cámara llaman a su función para moverse a la derecha
+		this->player->GiroDerecha();
+		break;
+
+	case 'A':
+	case 'a':
+		this->player->GiroIzquierda();
+		break;
+
+	case 'S':
+	case 's':
+		this->player->Retroceder();
+		break;
+
+	case 'W':
+	case 'w':
+		this->player->Avanzar();
+		break;
+
+	case ' ':
+		this->player->Disparar();
+		break;
+
+	default:
+		cout << "La tecla " << key << " no hace nada." << endl;
+		break;
+	}
 }

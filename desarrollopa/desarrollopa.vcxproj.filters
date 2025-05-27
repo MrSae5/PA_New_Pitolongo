@@ -90,9 +90,6 @@
     <ClCompile Include="Solid.cpp">
       <Filter>Archivos de origen\Core</Filter>
     </ClCompile>
-    <ClCompile Include="Player.cpp">
-      <Filter>Archivos de origen\Core</Filter>
-    </ClCompile>
     <ClCompile Include="Text.cpp">
       <Filter>Archivos de origen\Elements</Filter>
     </ClCompile>
@@ -107,6 +104,9 @@
     </ClCompile>
     <ClCompile Include="Emitter.cpp">
       <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Archivos de origen\Elements</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -158,9 +158,6 @@
     <ClInclude Include="Vector3D.h">
       <Filter>Archivos de encabezado\Utils</Filter>
     </ClInclude>
-    <ClInclude Include="Player.h">
-      <Filter>Archivos de encabezado\Core</Filter>
-    </ClInclude>
     <ClInclude Include="Text.h">
       <Filter>Archivos de encabezado\Elements</Filter>
     </ClInclude>
@@ -175,6 +172,9 @@
     </ClInclude>
     <ClInclude Include="Emitter.h">
       <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Archivos de encabezado\Elements</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

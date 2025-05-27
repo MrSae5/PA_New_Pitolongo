@@ -10,9 +10,30 @@ class Model : public Solid
 {
 private:
 	vector<Triangle> triangles;
+
 public:
-	Model() {}
-	
+
+	//modelos que se mueven
+	Model(const Model& other, const Vector3D& position, const Vector3D& orientation, const Color& color, const Vector3D& speed)
+		: Solid(color, position, orientation, speed) {
+
+		// Copia triángulos
+		this->triangles = other.triangles;
+		this->SetPosition(position);
+		this->SetColor(color);
+		this->SetOrientation(orientation);
+		this->SetSpeed(speed);
+	}
+
+
+	Model(const Vector3D& position, const Vector3D& orientation, const Color& color) : Solid(color, position, orientation) {
+
+		this->SetColor(color);
+		this->SetPosition(position);
+		this->SetOrientation(orientation);
+	}
+
+	Solid* Clone();
 	void Render();
 
 	void AddTriangle(Triangle triangle);
@@ -20,7 +41,10 @@ public:
 
 	void SetColor(Color colorToSet) override;
 
-	Solid* Clone();
+	Model(const vector<Triangle>& triangles, const Vector3D& position,
+		const Vector3D& orientation, const Color& color) : triangles(triangles), Solid(color, position,
+			orientation) { }
 
+	Model() = default;
 };
 

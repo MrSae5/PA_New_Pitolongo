@@ -34,5 +34,6 @@ public:
 
 	Vector3D operator-(Vector3D other);
 
-};
+	void Normalize();
 
+};
