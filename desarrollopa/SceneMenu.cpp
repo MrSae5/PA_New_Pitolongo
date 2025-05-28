@@ -15,10 +15,10 @@ bool SceneMenu::IsClickInsideButton(int x, int y) {
     float normY = 1.0f - (2.0f * y) / windowHeight; // Invertir eje Y
 
     // Obtener coordenadas del botón
-    float buttonX = button.GetPosition().GetX();
-    float buttonY = button.GetPosition().GetY();
-    float buttonWidth = button.GetWidth();
-    float buttonHeight = button.GetHeight();
+    float buttonX = button->GetPosition().GetX();
+    float buttonY = button->GetPosition().GetY();
+    float buttonWidth = button->GetWidth();
+    float buttonHeight = button->GetHeight();
 
     // Verificar si el clic está dentro de los límites del botón
     return (normX >= buttonX - buttonWidth / 2 && normX <= buttonX + buttonWidth / 2 &&
@@ -28,7 +28,7 @@ bool SceneMenu::IsClickInsideButton(int x, int y) {
 
 void SceneMenu::Render() {
     this->GetCamera().Render();
-    button.Render(); // Dibuja el botón
+    button->Render(); // Dibuja el botón
     texto.Render();
 }
 

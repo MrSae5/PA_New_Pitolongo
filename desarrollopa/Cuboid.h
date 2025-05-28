@@ -12,8 +12,16 @@ private:
 
 public:
 
-	Cuboid() : Solid(), length(0.2), height(1.4), width(1.0)
+	Cuboid() : Solid(), length(0.2f), height(1.4f), width(1.0f)
 	{}
+
+	Cuboid(float length, float height, float width, const Vector3D& position, const Vector3D& orientation, const Color& color, const Vector3D& speed) 
+		: Solid(color, position, orientation, speed)
+	{
+		SetLength(length);
+		SetHeight(height);
+		SetWidth(width);
+	}
 
 	inline float GetLength() { return this->length; }
 	inline float GetHeight() { return this->height; }

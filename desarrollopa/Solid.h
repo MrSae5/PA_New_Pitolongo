@@ -35,7 +35,7 @@ public:
 	inline bool GetWired() const { return this->wired; }
 
 	inline void SetPosition(Vector3D coordsToSet) { this->position = coordsToSet; }
-	inline void SetSpeed(const Vector3D& speedToSet) { this->speed = speedToSet; }
+	inline void SetSpeed(const Vector3D speedToSet) { this->speed = speedToSet; }
 	inline void SetOrientation(Vector3D orientationToSet) { this->orientation = orientationToSet; }
 	inline void SetOrientationSpeed(Vector3D orientationSpeedToSet) { this->orientationSpeed = orientationSpeedToSet; }
 	virtual void SetColor(Color colorToSet) { this->color = colorToSet; }

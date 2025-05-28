@@ -8,7 +8,7 @@ private:
 	float alpha;
 
 public:
-	Color() : red(0.2), green(0.6), blue(0.3), alpha(1)	{}
+	Color() : red(0.2f), green(0.6f), blue(0.3f), alpha(1.0f)	{}
 
 	Color(float redArgument, float greenArgument, float blueArgument, float alphaArgument)
 	{

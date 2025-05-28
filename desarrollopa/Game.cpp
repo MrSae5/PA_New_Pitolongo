@@ -1,4 +1,8 @@
 #include "Game.h"
+#include "Game.h"
+#include "Model.h"
+#include "Player.h"
+#include "ModelLoader.h"
 #include <iostream>
 #include <chrono>
 
@@ -13,8 +17,18 @@ void Game::Init()
 	SceneMenu* scene3 = new SceneMenu(); //Pantalla de perder/ganar
 
 	// Crear el jugador
+	ModelLoader* loader = new ModelLoader();
+	loader->SetScale(0.5);
+    loader->LoadModel("..\\3dModels\\Tank.obj");
 
-	Player* player1 = new Player();
+	EmitterConfiguration* configuracionBala = new EmitterConfiguration(0, 500);
+	Bala* bala = new Bala();
+	
+	Player* player1 = new Player(loader->GetModel(), Vector3D(6, 3, 0), Vector3D(0, 0, 180), Color(0.0, 1.0, 0.0, 1.0), Vector3D(0, 0, 0)); 
+
+    BulletEmitter* emisor = new BulletEmitter(*configuracionBala, bala);
+    player1->SetBulletEmitter(emisor);
+
 
 	// Añadir el jugador a la escena como objeto del juego
 	scene2->AddPlayer(player1);
@@ -50,11 +64,12 @@ void Game::ProcessKeyPressed(unsigned char key, int px, int py)
 {
 	cout << "tecla pulsada: " << key << endl;
 
-
+	
 	SceneGame* sceneGame = dynamic_cast<SceneGame*>(activeScene);
 	if (sceneGame) { // Verificamos que activeScene sea SceneGame
-		sceneGame->GetPlayer()->ProcessKeyPressed(key, px, py);
+		sceneGame->ProcessKeyPressed(key, px, py);
 	}
+	
 
 }
 
@@ -66,6 +81,7 @@ void Game::ProcessMouseClicked(int button, int state, int x, int y)
 		SceneMenu* sceneMenu = dynamic_cast<SceneMenu*>(activeScene);
 		if (sceneMenu && sceneMenu->IsClickInsideButton(x, y)) {
 			cout << "[GAME] Click en el botón, cambiando a SceneGame..." << endl;
+			delete activeScene;
 			activeScene = scenes[1]; // Cambia a SceneGame
 		}
 	}

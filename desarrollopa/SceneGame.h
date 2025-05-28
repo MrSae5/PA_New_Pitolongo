@@ -1,5 +1,6 @@
 #pragma once
 #include "Scene.h"
+#include "Player.h"
 
 class SceneGame : public Scene
 {
@@ -34,5 +35,7 @@ public:
 
 	void Render() override;
 	void Update() override;
+	void ProcessKeyPressed(unsigned char key, int px, int py);
+
 };
 

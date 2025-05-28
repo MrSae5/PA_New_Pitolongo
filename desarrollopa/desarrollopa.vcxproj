@@ -128,6 +128,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Bala.cpp" />
     <ClCompile Include="BulletEmitter.cpp" />
     <ClCompile Include="Camera.cpp" />
     <ClCompile Include="Color.cpp" />
@@ -153,6 +154,7 @@
     <ClCompile Include="Vector3D.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Bala.h" />
     <ClInclude Include="BulletEmitter.h" />
     <ClInclude Include="Camera.h" />
     <ClInclude Include="Color.h" />

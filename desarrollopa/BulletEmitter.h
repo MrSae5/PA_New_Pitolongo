@@ -4,16 +4,14 @@
 
 class BulletEmitter : public Emitter {
 public:
-	BulletEmitter() :Emitter() {};
+	BulletEmitter(EmitterConfiguration& configuracion, Solid* particula) : Emitter(configuracion, particula) {};
 	
 	void Render();
-
-	
 
 	void Update(const float& time);
 	Solid* Clone();
 
-	void ProcessKeyPressed(unsigned char key, int px, int py);
+	void DispararBala();
 
 };
 

@@ -18,17 +18,13 @@ protected:
 	float angulo;
 
 public:
-	Emitter() : Solid()
-	{
 
-		this->configuracion = new EmitterConfiguration();
-		this->configuracion->Setparticula(new Teapot);
-		this->configuracion->Setparticula(new Sphere);
-		this->initialMilliseconds = duration_cast<milliseconds>(system_clock::now().time_since_epoch());
-		this->lastUpdatedTime = 0;
-		this->angulo = 0;
+	Emitter(EmitterConfiguration& configuracionToSet, Solid* particula) : Solid()
+	{
+		this->configuracion = new EmitterConfiguration(configuracionToSet); 
+		this->configuracion->SetParticula(particula);
 	}
-	
+
 	void Render();
 
 	void Update();
