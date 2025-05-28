@@ -7,7 +7,7 @@
 class SceneMenu : public Scene //Hereda de Scene
 {
 private:
-	Cuboid* button; // Un cubo que har· de botÛn
+	Cuboid* button; // Un cubo que har√° de bot√≥n
 	Text texto;
 
 public:
@@ -15,7 +15,7 @@ public:
 
     SceneMenu() {
 		
-		button = new Cuboid(0.2f, 1.0f, 3.0f, Vector3D(0, 0, -5), Vector3D(0, 90, 180), Color(1, 0, 0, 1), Vector3D(0, 0, 0));
+		button = new Cuboid(2.5f, 1.0f, 2.5f, Vector3D(0, 0, -5), Vector3D(0, 90, 180), Color(1, 0, 0, 1), Vector3D(0, 0, 0));
 
 		texto.SetPosition(Vector3D(-0.03, 0, -1));
 		texto.SetText("Play");
