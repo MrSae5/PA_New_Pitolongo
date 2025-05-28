@@ -13,5 +13,10 @@ public:
 
 	void DispararBala();
 
+    std::vector<Solid*>& GetBullets() {
+        return this->particulas;
+    }
+
+
 };
 

@@ -1,16 +1,12 @@
-﻿  Game.cpp
-E:\URJC_24-25\1 cuatri\PA\prac1_copia\prac1_copia\desarrollopa\Teapot.h(12,17): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "Game.cpp")
+﻿  BulletEmitter.cpp
+D:\URJC_24-25\1 cuatri\PA\prac1_copia\prac1_copia\desarrollopa\Teapot.h(12,17): warning C4305: 'initializing': truncation from 'double' to 'float'
+  (compiling source file 'BulletEmitter.cpp')
   
-E:\URJC_24-25\1 cuatri\PA\prac1_copia\prac1_copia\desarrollopa\SceneGame.h(23,100): warning C4244: 'argumento': conversión de 'double' a 'float'; posible pérdida de datos
-  (compilando archivo de origen "Game.cpp")
-  
-E:\URJC_24-25\1 cuatri\PA\prac1_copia\prac1_copia\desarrollopa\SceneMenu.h(20,30): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "Game.cpp")
-  
-E:\URJC_24-25\1 cuatri\PA\prac1_copia\prac1_copia\desarrollopa\Game.cpp(56,47): warning C4244: '=': conversión de '_Rep' a 'long'; posible pérdida de datos
-E:\URJC_24-25\1 cuatri\PA\prac1_copia\prac1_copia\desarrollopa\Game.cpp(56,47): warning C4244:         with
-E:\URJC_24-25\1 cuatri\PA\prac1_copia\prac1_copia\desarrollopa\Game.cpp(56,47): warning C4244:         [
-E:\URJC_24-25\1 cuatri\PA\prac1_copia\prac1_copia\desarrollopa\Game.cpp(56,47): warning C4244:             _Rep=__int64
-E:\URJC_24-25\1 cuatri\PA\prac1_copia\prac1_copia\desarrollopa\Game.cpp(56,47): warning C4244:         ]
-  desarrollopa.vcxproj -> E:\URJC_24-25\1 cuatri\PA\prac1_copia\prac1_copia\x64\Debug\desarrollopa.exe
+D:\URJC_24-25\1 cuatri\PA\prac1_copia\prac1_copia\desarrollopa\BulletEmitter.cpp(54,21): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+D:\URJC_24-25\1 cuatri\PA\prac1_copia\prac1_copia\desarrollopa\BulletEmitter.cpp(53,21): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+D:\URJC_24-25\1 cuatri\PA\prac1_copia\prac1_copia\desarrollopa\BulletEmitter.cpp(76,46): warning C4244: '=': conversion from '_Rep' to 'long', possible loss of data
+D:\URJC_24-25\1 cuatri\PA\prac1_copia\prac1_copia\desarrollopa\BulletEmitter.cpp(76,46): warning C4244:         with
+D:\URJC_24-25\1 cuatri\PA\prac1_copia\prac1_copia\desarrollopa\BulletEmitter.cpp(76,46): warning C4244:         [
+D:\URJC_24-25\1 cuatri\PA\prac1_copia\prac1_copia\desarrollopa\BulletEmitter.cpp(76,46): warning C4244:             _Rep=__int64
+D:\URJC_24-25\1 cuatri\PA\prac1_copia\prac1_copia\desarrollopa\BulletEmitter.cpp(76,46): warning C4244:         ]
+  desarrollopa.vcxproj -> D:\URJC_24-25\1 cuatri\PA\prac1_copia\prac1_copia\x64\Debug\desarrollopa.exe

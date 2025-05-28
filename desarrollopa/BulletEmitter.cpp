@@ -48,9 +48,13 @@ void BulletEmitter::DispararBala() {
 	particle->SetOrientation(this->GetOrientation());
 
 
-	Vector3D velocidad= Vector3D(0.1 * cos((GetOrientation().GetZ() - 90.0f) * M_PI / 180.0f),
-			0.1 * sin((GetOrientation().GetZ() - 90.0f) * M_PI / 180.0f),
-			0);
+    const float bulletSpeed = 0.2f; // ajustar aquí
+    Vector3D velocidad = Vector3D(
+        bulletSpeed * cos((GetOrientation().GetZ() - 90.0f) * M_PI / 180.0f),
+        bulletSpeed * sin((GetOrientation().GetZ() - 90.0f) * M_PI / 180.0f),
+        0
+    );
+
 
 
 	//Vector3D velocidad = Vector3D(seno * 0.01, coseno * 0.01, 0); //Se crea una variable para que sea más fácil darle el color después

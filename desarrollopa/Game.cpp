@@ -32,6 +32,9 @@ void Game::Init()
 
 	// Añadir el jugador a la escena como objeto del juego
 	scene2->AddPlayer(player1);
+    //añade enemigos 
+    scene2->InitEnemyEmitter();
+
 
 
 	this->scenes.push_back(scene1);

@@ -2,38 +2,37 @@
 class Vector3D
 {
 private:
-
-	float x;
-	float y;
-	float z;
+    float x;
+    float y;
+    float z;
 
 public:
 
-	Vector3D() : x(0.0), y(0.0), z(0.0) {}
+    Vector3D() : x(0.0f), y(0.0f), z(0.0f) {}
 
-	Vector3D(float xArgument, float yArgument, float zArgument)
-	{
-		this->x = xArgument;
-		this->y = yArgument;
-		this->z = zArgument;
-	}
+    Vector3D(float xArgument, float yArgument, float zArgument)
+        : x(xArgument), y(yArgument), z(zArgument) {}
 
-	inline float GetX() { return this->x; }
-	inline float GetY() { return this->y; }
-	inline float GetZ() { return this->z; }
+    // Getters const para que puedan usarse en operadores const
+    inline float GetX() const { return this->x; }
+    inline float GetY() const { return this->y; }
+    inline float GetZ() const { return this->z; }
 
-	inline void SetX(const float& xToSet) { this->x = xToSet; }
-	inline void SetY(const float& yToSet) { this->y = yToSet; }
-	inline void SetZ(const float& zToSet) { this->z = zToSet; }
+    // Setters pueden quedarse igual
+    inline void SetX(const float& xToSet) { this->x = xToSet; }
+    inline void SetY(const float& yToSet) { this->y = yToSet; }
+    inline void SetZ(const float& zToSet) { this->z = zToSet; }
 
-	Vector3D Add(Vector3D other);
-	Vector3D operator+(Vector3D other);
+    // Declaración con const y referencias
+    Vector3D Add(const Vector3D& other) const;
+    Vector3D operator+(const Vector3D& other) const;
 
-	Vector3D Product(float a);
-	Vector3D operator*(float a);
+    Vector3D Product(float a) const;
+    Vector3D operator*(float a) const;
 
-	Vector3D operator-(Vector3D other);
+    Vector3D operator-(const Vector3D& other) const;
 
-	void Normalize();
+    void Normalize();
 
+    float Length();
 };

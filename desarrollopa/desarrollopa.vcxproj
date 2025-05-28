@@ -138,6 +138,8 @@
     <ClCompile Include="desarrollopa.cpp" />
     <ClCompile Include="Display.cpp" />
     <ClCompile Include="Emitter.cpp" />
+    <ClCompile Include="Enemigo.cpp" />
+    <ClCompile Include="EnemyEmitter.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Model.cpp" />
     <ClCompile Include="ModelLoader.cpp" />
@@ -163,7 +165,9 @@
     <ClInclude Include="Cylinder.h" />
     <ClInclude Include="Display.h" />
     <ClInclude Include="Emitter.h" />
+    <ClInclude Include="Enemigo.h" />
     <ClInclude Include="Game.h" />
+    <ClInclude Include="EnemyEmitter.h" />
     <ClInclude Include="Model.h" />
     <ClInclude Include="ModelLoader.h" />
     <ClInclude Include="Player.h" />
