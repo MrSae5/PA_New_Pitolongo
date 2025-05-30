@@ -1,12 +1,2 @@
-﻿  SceneGame.cpp
-C:\Users\anits\Downloads\prac1_copia\desarrollopa\Teapot.h(12,17): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "SceneGame.cpp")
-  
-C:\Users\anits\Downloads\prac1_copia\desarrollopa\SceneGame.h(23,100): warning C4244: 'argumento': conversión de 'double' a 'float'; posible pérdida de datos
-  (compilando archivo de origen "SceneGame.cpp")
-  
-C:\Users\anits\Downloads\prac1_copia\desarrollopa\SceneGame.cpp(67,20): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\anits\Downloads\prac1_copia\desarrollopa\SceneGame.cpp(75,17): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\anits\Downloads\prac1_copia\desarrollopa\SceneGame.cpp(82,18): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\anits\Downloads\prac1_copia\desarrollopa\SceneGame.cpp(90,19): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+﻿  LINK : no se encontró C:\Users\anits\Downloads\prac1_copia\x64\Debug\desarrollopa.exe o no lo generó el último vínculo incremental; ejecutando vínculo completo
   desarrollopa.vcxproj -> C:\Users\anits\Downloads\prac1_copia\x64\Debug\desarrollopa.exe

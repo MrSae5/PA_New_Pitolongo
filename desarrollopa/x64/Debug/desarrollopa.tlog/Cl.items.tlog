@@ -1,3 +1,4 @@
+C:\Users\anits\Downloads\prac1_copia\desarrollopa\Bala.cpp;C:\Users\anits\Downloads\prac1_copia\desarrollopa\x64\Debug\Bala.obj
 C:\Users\anits\Downloads\prac1_copia\desarrollopa\BulletEmitter.cpp;C:\Users\anits\Downloads\prac1_copia\desarrollopa\x64\Debug\BulletEmitter.obj
 C:\Users\anits\Downloads\prac1_copia\desarrollopa\Camera.cpp;C:\Users\anits\Downloads\prac1_copia\desarrollopa\x64\Debug\Camera.obj
 C:\Users\anits\Downloads\prac1_copia\desarrollopa\Color.cpp;C:\Users\anits\Downloads\prac1_copia\desarrollopa\x64\Debug\Color.obj
@@ -7,6 +8,9 @@ C:\Users\anits\Downloads\prac1_copia\desarrollopa\Cylinder.cpp;C:\Users\anits\Do
 C:\Users\anits\Downloads\prac1_copia\desarrollopa\desarrollopa.cpp;C:\Users\anits\Downloads\prac1_copia\desarrollopa\x64\Debug\desarrollopa.obj
 C:\Users\anits\Downloads\prac1_copia\desarrollopa\Display.cpp;C:\Users\anits\Downloads\prac1_copia\desarrollopa\x64\Debug\Display.obj
 C:\Users\anits\Downloads\prac1_copia\desarrollopa\Emitter.cpp;C:\Users\anits\Downloads\prac1_copia\desarrollopa\x64\Debug\Emitter.obj
+C:\Users\anits\Downloads\prac1_copia\desarrollopa\EmitterConfiguration.cpp;C:\Users\anits\Downloads\prac1_copia\desarrollopa\x64\Debug\EmitterConfiguration.obj
+C:\Users\anits\Downloads\prac1_copia\desarrollopa\Enemigo.cpp;C:\Users\anits\Downloads\prac1_copia\desarrollopa\x64\Debug\Enemigo.obj
+C:\Users\anits\Downloads\prac1_copia\desarrollopa\EnemyEmitter.cpp;C:\Users\anits\Downloads\prac1_copia\desarrollopa\x64\Debug\EnemyEmitter.obj
 C:\Users\anits\Downloads\prac1_copia\desarrollopa\Game.cpp;C:\Users\anits\Downloads\prac1_copia\desarrollopa\x64\Debug\Game.obj
 C:\Users\anits\Downloads\prac1_copia\desarrollopa\Model.cpp;C:\Users\anits\Downloads\prac1_copia\desarrollopa\x64\Debug\Model.obj
 C:\Users\anits\Downloads\prac1_copia\desarrollopa\ModelLoader.cpp;C:\Users\anits\Downloads\prac1_copia\desarrollopa\x64\Debug\ModelLoader.obj
@@ -21,3 +25,4 @@ C:\Users\anits\Downloads\prac1_copia\desarrollopa\Text.cpp;C:\Users\anits\Downlo
 C:\Users\anits\Downloads\prac1_copia\desarrollopa\Torus.cpp;C:\Users\anits\Downloads\prac1_copia\desarrollopa\x64\Debug\Torus.obj
 C:\Users\anits\Downloads\prac1_copia\desarrollopa\Triangle.cpp;C:\Users\anits\Downloads\prac1_copia\desarrollopa\x64\Debug\Triangle.obj
 C:\Users\anits\Downloads\prac1_copia\desarrollopa\Vector3D.cpp;C:\Users\anits\Downloads\prac1_copia\desarrollopa\x64\Debug\Vector3D.obj
+C:\Users\anits\Downloads\prac1_copia\desarrollopa\Vidas.cpp;C:\Users\anits\Downloads\prac1_copia\desarrollopa\x64\Debug\Vidas.obj
