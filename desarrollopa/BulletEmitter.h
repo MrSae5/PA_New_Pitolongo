@@ -4,7 +4,7 @@
 
 class BulletEmitter : public Emitter {
 public:
-	BulletEmitter() :Emitter() {};
+	BulletEmitter(EmitterConfiguration& configuracion, Solid* particula) : Emitter(configuracion, particula) {};
 	
 	void Render();
 
@@ -12,6 +12,11 @@ public:
 	Solid* Clone();
 
 	void DispararBala();
+
+    std::vector<Solid*>& GetBullets() {
+        return this->particulas;
+    }
+
 
 };
 

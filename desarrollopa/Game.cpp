@@ -3,6 +3,7 @@
 #include "Model.h"
 #include "Player.h"
 #include "ModelLoader.h"
+#include "Vidas.h"
 #include <iostream>
 #include <chrono>
 
@@ -21,10 +22,48 @@ void Game::Init()
 	loader->SetScale(0.5);
     loader->LoadModel("..\\3dModels\\Tank.obj");
 
-	Player* player1 = new Player(loader->GetModel(), Vector3D(6, 3, 0), Vector3D(0, 0, 180), Color(0.0, 1.0, 0.0, 1.0), Vector3D(0, 0, 0));
+	EmitterConfiguration* configuracionBala = new EmitterConfiguration(0, 500);
+	Bala* bala = new Bala();
+	
+	Player* player1 = new Player(loader->GetModel(), Vector3D(6, 3, 0), Vector3D(0, 0, 180), Color(0.0, 1.0, 0.0, 1.0), Vector3D(0, 0, 0)); 
+
+    BulletEmitter* emisor = new BulletEmitter(*configuracionBala, bala);
+    player1->SetBulletEmitter(emisor);
+
 
 	// Añadir el jugador a la escena como objeto del juego
 	scene2->AddPlayer(player1);
+    //añade enemigos 
+    scene2->InitEnemyEmitter();
+
+
+    //vidas
+    ModelLoader* loaderVidas = new ModelLoader();
+    loaderVidas->SetScale(1.0);
+    loaderVidas->LoadModel("..\\3dModels\\Heart.obj");
+
+    /*
+    for (int i = 0; i < 3; ++i) {
+        Vidas* vida = new Vidas(
+            loaderVidas->GetModel(),
+            Vector3D(1.0f + i * 2.0f, 11.0f, 0.0f), // separadas horizontalmente
+            Vector3D(0, 90, 0), // orientación inicial
+            Color(1.0f, 0.0f, 0.0f, 1.0f),
+            Vector3D(0, 0, 0)
+        );
+    */
+    
+    Vidas* vida = new Vidas(
+        loaderVidas->GetModel(),
+        Vector3D(1, 11, 0),
+        Vector3D(0, 90, 0),
+        Color(1.0f, 0.0f, 0.0f, 1.0f),
+        Vector3D(0, 0, 0)
+    );
+    
+    scene2->SetVidas(vida); 
+
+
 
 
 	this->scenes.push_back(scene1);
@@ -74,6 +113,7 @@ void Game::ProcessMouseClicked(int button, int state, int x, int y)
 		SceneMenu* sceneMenu = dynamic_cast<SceneMenu*>(activeScene);
 		if (sceneMenu && sceneMenu->IsClickInsideButton(x, y)) {
 			cout << "[GAME] Click en el botón, cambiando a SceneGame..." << endl;
+			delete activeScene;
 			activeScene = scenes[1]; // Cambia a SceneGame
 		}
 	}

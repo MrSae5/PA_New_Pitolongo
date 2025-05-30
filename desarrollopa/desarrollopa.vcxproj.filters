@@ -93,19 +93,34 @@
     <ClCompile Include="Text.cpp">
       <Filter>Archivos de origen\Elements</Filter>
     </ClCompile>
-    <ClCompile Include="BulletEmitter.cpp">
-      <Filter>Archivos de origen</Filter>
-    </ClCompile>
     <ClCompile Include="SceneGame.cpp">
       <Filter>Archivos de origen\Core</Filter>
     </ClCompile>
     <ClCompile Include="SceneMenu.cpp">
       <Filter>Archivos de origen\Core</Filter>
     </ClCompile>
-    <ClCompile Include="Emitter.cpp">
-      <Filter>Archivos de origen</Filter>
-    </ClCompile>
     <ClCompile Include="Player.cpp">
+      <Filter>Archivos de origen\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="Bala.cpp">
+      <Filter>Archivos de origen\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemigo.cpp">
+      <Filter>Archivos de origen\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyEmitter.cpp">
+      <Filter>Archivos de origen\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="BulletEmitter.cpp">
+      <Filter>Archivos de origen\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Emitter.cpp">
+      <Filter>Archivos de origen\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="EmitterConfiguration.cpp">
+      <Filter>Archivos de origen\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Vidas.cpp">
       <Filter>Archivos de origen\Elements</Filter>
     </ClCompile>
   </ItemGroup>
@@ -161,19 +176,34 @@
     <ClInclude Include="Text.h">
       <Filter>Archivos de encabezado\Elements</Filter>
     </ClInclude>
-    <ClInclude Include="BulletEmitter.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
     <ClInclude Include="SceneGame.h">
       <Filter>Archivos de encabezado\Core</Filter>
     </ClInclude>
     <ClInclude Include="SceneMenu.h">
       <Filter>Archivos de encabezado\Core</Filter>
     </ClInclude>
-    <ClInclude Include="Emitter.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
     <ClInclude Include="Player.h">
+      <Filter>Archivos de encabezado\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="Bala.h">
+      <Filter>Archivos de encabezado\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemigo.h">
+      <Filter>Archivos de encabezado\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyEmitter.h">
+      <Filter>Archivos de encabezado\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="EmitterConfiguration.h">
+      <Filter>Archivos de encabezado\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Emitter.h">
+      <Filter>Archivos de encabezado\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="BulletEmitter.h">
+      <Filter>Archivos de encabezado\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Vidas.h">
       <Filter>Archivos de encabezado\Elements</Filter>
     </ClInclude>
   </ItemGroup>

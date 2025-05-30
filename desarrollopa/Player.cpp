@@ -46,6 +46,16 @@ void Player::Retroceder() {
 }
 
 void Player::Disparar() {
+    balaEmisor->SetPosition(this->GetPosition());
+    balaEmisor->SetOrientation(this->GetOrientation());
+
+    auto currentTime = duration_cast<milliseconds>(system_clock::now().time_since_epoch()).count();
+
+    if (currentTime - utltmDisparo < cooldown) {
+        return; // no han pasado suficientes ms, no dispara
+    }
+
+    utltmDisparo = currentTime;
     balaEmisor->DispararBala();
 }
 
