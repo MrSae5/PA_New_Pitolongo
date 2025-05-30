@@ -7,22 +7,21 @@
 class SceneMenu : public Scene //Hereda de Scene
 {
 private:
-	Cuboid button; // Un cubo que hará de botón
+	Cuboid* button; // Un cubo que hará de botón
 	Text texto;
 
 public:
 	// void AddGameObject(Solid* gameObject); 
 
     SceneMenu() {
-		button.SetPosition(Vector3D (0, 0, -5));
-		button.SetOrientation(Vector3D (0, 90, 180));
-		button.SetColor(Color(1, 0, 0, 1));
-		button.SetWidth(3.0);
-		button.SetHeight(1.);
+		
+        button = new Cuboid(2.5f, 1.0f, 2.5f, Vector3D(0, 0, -5), Vector3D(0, 90, 180), Color(1, 0, 0, 1), Vector3D(0, 0, 0));
 
 		texto.SetPosition(Vector3D(-0.03, 0, -1));
 		texto.SetText("Play");
     }
+
+	~SceneMenu() { delete button; };
 
 	bool IsClickInsideButton(int x, int y);
 

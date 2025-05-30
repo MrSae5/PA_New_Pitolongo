@@ -52,16 +52,20 @@ void Game::Init()
             Vector3D(0, 0, 0)
         );
     */
-    
-    Vidas* vida = new Vidas(
-        loaderVidas->GetModel(),
-        Vector3D(1, 11, 0),
-        Vector3D(0, 90, 0),
-        Color(1.0f, 0.0f, 0.0f, 1.0f),
-        Vector3D(0, 0, 0)
-    );
-    
-    scene2->SetVidas(vida); 
+    std::vector<Vidas*> vidas;
+
+    for (int i = 0; i < 3; ++i) {
+        Vidas* vida = new Vidas(
+            loaderVidas->GetModel(),
+            Vector3D(1.0f + i * 2.0f, 11.0f, 0.0f), // posición consecutiva horizontal
+            Vector3D(0, 90, 0),
+            Color(1.0f, 0.0f, 0.0f, 1.0f),
+            Vector3D(0, 0, 0)
+        );
+        vidas.push_back(vida);
+    }
+
+    scene2->SetVidas(vidas);
 
 
 

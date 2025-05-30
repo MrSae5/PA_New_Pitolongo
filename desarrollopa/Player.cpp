@@ -10,7 +10,7 @@
 //Girar a la ziquierda (rotación antihoraria)
 void Player::GiroIzquierda() {
 
-    this->SetOrientation(Vector3D(this->GetOrientation().GetX(), this->GetOrientation().GetY(), this->GetOrientation().GetZ() + 5.0f));
+    this->SetOrientation(Vector3D(this->GetOrientation().GetX(), this->GetOrientation().GetY(), this->GetOrientation().GetZ() + 10.0f));
 
     if (this->GetOrientation().GetZ() < 0) {
         this->SetOrientation(Vector3D(this->GetOrientation().GetX(), this->GetOrientation().GetY(), this->GetOrientation().GetZ() + 360.0f));
@@ -20,7 +20,7 @@ void Player::GiroIzquierda() {
 // Girar a la derecha (rotación horaria)
 void Player::GiroDerecha() {
 
-    this->SetOrientation(Vector3D(this->GetOrientation().GetX(), this->GetOrientation().GetY(), this->GetOrientation().GetZ() - 5.0f));
+    this->SetOrientation(Vector3D(this->GetOrientation().GetX(), this->GetOrientation().GetY(), this->GetOrientation().GetZ() - 10.0f));
 
     if (this->GetOrientation().GetZ() >= 360.0f) {
         this->SetOrientation(Vector3D(this->GetOrientation().GetX(), this->GetOrientation().GetY(), this->GetOrientation().GetZ() - 360.0f));

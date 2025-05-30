@@ -14,8 +14,8 @@ void SceneGame::Render() {
         enemyEmitter->Render();
     }
 
-    if (vidasJugador) {
-        vidasJugador->Render();
+    for (Vidas* e : vidasJugador) {
+        e->Render();
     }
 
 }
@@ -65,6 +65,21 @@ void SceneGame::Update()
                 std::cout << "[SceneGame] El jugador fue tocado por un enemigo!" << std::endl;
                 // Aquí manejar vida, game over, o eliminar enemigo
                 enemyEmitter->RemoveEnemy(enemy);
+
+                if (!vidasJugador.empty()) {
+                    Vidas* vida = vidasJugador.back();
+                    vidasJugador.pop_back();
+                    delete vida;
+                    std::cout << "[SceneGame] Vida perdida! Quedan: " << vidasJugador.size() << std::endl;
+
+                    if (vidasJugador.empty()) {
+                        std::cout << "[SceneGame] GAME OVER!" << std::endl;
+                        // Cambiar a pantalla de "Perder"
+                        // Todavía hay que implementarlo
+
+                    }
+                }
+
                 break;
             }
         }
@@ -160,7 +175,7 @@ void SceneGame::renderBoundary()
 
 //emisor enemigos
 void SceneGame::InitEnemyEmitter() {
-    enemyEmitter = new EnemyEmitter(boundary, player, 50.0f); 
+    enemyEmitter = new EnemyEmitter(boundary, player, 75.0f); 
 }
 
 
@@ -192,8 +207,7 @@ void SceneGame::ProcessKeyPressed(unsigned char key, int px, int py) {
 		this->player->Avanzar();
 		break;
 
-	case 'e':
-    case 'E':
+	case ' ':
 		this->player->Disparar();
 		break;
 

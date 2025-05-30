@@ -15,7 +15,7 @@ private:
     Player* player;
 
 public:
-    EnemyEmitter(Vector3D boundary_, Player* player_, float interval = 1.0f)
+    EnemyEmitter(Vector3D boundary_, Player* player_, float interval)
         : boundary(boundary_), player(player_), spawnInterval(interval), elapsedTime(0.0f) {}
 
     ~EnemyEmitter() {

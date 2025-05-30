@@ -11,7 +11,7 @@ private:
     Player* player;
     Vector3D boundary;
     bool drawBoundary;
-    Vidas* vidasJugador;
+    std::vector<Vidas*> vidasJugador; //Vector de 3 vidas
 
     EnemyEmitter* enemyEmitter = nullptr; 
 
@@ -32,8 +32,8 @@ public:
     inline Player* GetPlayer() { return this->player; }
     void AddPlayer(Player* playerToSet) { this->player = playerToSet; };
 
-    void SetVidas(Vidas* v) { this->vidasJugador = v; }
-    Vidas* GetVidas() const { return this->vidasJugador; }
+    void SetVidas(vector<Vidas*> v) { this->vidasJugador = v; }
+    vector<Vidas*> GetVidas() const { return this->vidasJugador; }
 
 
     inline Vector3D GetBoundary() { return this->boundary; }
